@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.example.travel.model.BudgetCalculatorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.example.travel.model.BudgetCalculatorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.travel.model.html">com.example.travel.model</a> &gt; BudgetCalculatorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.015s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testTravelInformationSuccess</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTravelInformationWithInvalidCountryNameExpectedException</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTravelInformationWithInvalidCurrencyExpectedException</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2019-08-27 13:54:31.760  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Calculating travel information for TripPlan{startCountry='Bulgaria', budgetPerCountry=100.0, totalBudget=1200.0, currency='BG'}
+2019-08-27 13:54:31.760  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Starting country Country{name='Bulgaria', borders=[GR, MK, RO, SR, TR], currencies=[BGN]}
+2019-08-27 13:54:31.761  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Calculating number of visits for TripPlan{startCountry='Bulgaria', budgetPerCountry=100.0, totalBudget=1200.0, currency='BG'} with number of country neighbors 5
+2019-08-27 13:54:31.761  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Budget per country in original rate 200.0
+2019-08-27 13:54:31.761  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Leftover 200.0
+2019-08-27 13:54:31.761  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Calculating budget per country 200.0 and number of country neighbors [GR, MK, RO, SR, TR] and initial initialCurrency code BG
+2019-08-27 13:54:31.763  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Calculating travel information for TripPlan{startCountry='B', budgetPerCountry=100.0, totalBudget=1200.0, currency='EUR'}
+2019-08-27 13:54:31.766 ERROR 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Failed to get initial country null
+
+com.example.travel.service.exception.CountryServiceException: null
+
+2019-08-27 13:54:31.767  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Calculating travel information for TripPlan{startCountry='Bulgaria', budgetPerCountry=100.0, totalBudget=1200.0, currency='EUR'}
+2019-08-27 13:54:31.767  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Starting country Country{name='Bulgaria', borders=[GR, MK, RO, SR, TR], currencies=[BGN]}
+2019-08-27 13:54:31.767  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Calculating number of visits for TripPlan{startCountry='Bulgaria', budgetPerCountry=100.0, totalBudget=1200.0, currency='EUR'} with number of country neighbors 5
+2019-08-27 13:54:31.767  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Budget per country in original rate 200.0
+2019-08-27 13:54:31.767  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Leftover 200.0
+2019-08-27 13:54:31.767  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Calculating budget per country 200.0 and number of country neighbors [GR, MK, RO, SR, TR] and initial initialCurrency code EUR
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Get initialCurrency Currency{base='EUR', rates={RON=4.725, TRY=6.1452}}
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Found neighbour: Country{name='Greece', borders=null, currencies=[EUR]}
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : neighbour country: Country{name='Greece', borders=null, currencies=[EUR]} | country base EUR | country budget 200.0
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Found neighbour: Country{name='Republic of Macedonia', borders=null, currencies=[]}
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : neighbour country: Country{name='Republic of Macedonia', borders=null, currencies=[]} | country base EUR | country budget 200.0
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Found neighbour: Country{name='Romania', borders=null, currencies=[RON]}
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : neighbour country: Country{name='Romania', borders=null, currencies=[RON]} | country base RON | country budget 945.0
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Found neighbour: Country{name='Serbia', borders=null, currencies=[]}
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : neighbour country: Country{name='Serbia', borders=null, currencies=[]} | country base EUR | country budget 200.0
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : Found neighbour: Country{name='Turkey', borders=null, currencies=[TRY]}
+2019-08-27 13:54:31.768  INFO 7590 --- [    Test worker] c.e.t.calculator.impl.BudgetCalculator   : neighbour country: Country{name='Turkey', borders=null, currencies=[TRY]} | country base TRY | country budget 1229.0399
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.4.1</a> at 27-Aug-2019 13:54:31</p>
+</div>
+</div>
+</body>
+</html>
