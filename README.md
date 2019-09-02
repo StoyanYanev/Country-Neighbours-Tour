@@ -26,7 +26,7 @@ The API calculates the budget for each country in its respected currencies. If t
 - With Postman you can send two types of request **POST** and **GET**:
     1. To send **Post** request copy API url http://localhost:8080/tour and paste it in the Postman endpoint bar.
         
-          ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/url.png)
+          ![](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/url.png)
            
           ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/Post.png)
         
