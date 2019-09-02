@@ -25,12 +25,14 @@ The API calculates the budget for each country in its respected currencies. If t
 
 - With Postman you can send two types of request **POST** and **GET**:
     1. To send **Post** request copy API url http://localhost:8080/tour and paste it in the Postman endpoint bar.
+        
           ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/url.png)
            
           ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/Post.png)
         
         After that you must add **request body**: click on Body tab then click on raw and select format type JSON. This endpoint expects a Json body which contains the details for new trip plan. Below is a sample Json body.
-            ```
+           
+           ```
             {	
         		"startCountry": "Bulgaria",
         		"budgetPerCountry": "100",
@@ -39,13 +41,15 @@ The API calculates the budget for each country in its respected currencies. If t
         	}
             ```
             
-           ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/Body.png)
+          ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/Body.png)
             
     2. To send **Get** request with **path variables** use the following url(you can make your own trip plan by changing the path variables): http://localhost:8080/tour/Bulgaria/100/1200/EUR
-    ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/PathVariables.png)
+   
+   ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/PathVariables.png)
     
     3. To send **Get** request with **request parameters** use the following ur(you can make your own trip plan by changing the request parameters): http://localhost:8080/tour/v2country=Bulgaria&budgetPerCountry=100.0&totalBudget=1200.0&currency=EUR
-    ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/%20RequestParameters.png)
+   
+   ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/%20RequestParameters.png)
 
 ## Diagram of the Application
     
@@ -60,4 +64,4 @@ The API calculates the budget for each country in its respected currencies. If t
     $ helm install . -n tour
     $ kubectl port-forward <pod name> 8080:8080
     ```
-5. Open Postman and repeat the steps above.
+5. Open Postman and repeat the steps **above**.
