@@ -25,9 +25,11 @@ The API calculates the budget for each country in its respected currencies. If t
 
 - With Postman you can send two types of request **POST** and **GET**:
     1. To send **Post** request copy API url http://localhost:8080/tour and paste it in the Postman endpoint bar.
-            ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/url.png)
-            ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/Post.png)
-        -- After that you must add **request body**: click on Body tab then click on raw and select format type JSON. This endpoint expects a Json body which contains the details for new trip plan. Below is a sample Json body.
+          ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/url.png)
+           
+          ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/Post.png)
+        
+        After that you must add **request body**: click on Body tab then click on raw and select format type JSON. This endpoint expects a Json body which contains the details for new trip plan. Below is a sample Json body.
             ```
             {	
         		"startCountry": "Bulgaria",
@@ -36,6 +38,7 @@ The API calculates the budget for each country in its respected currencies. If t
         		"currencyCode": "EUR"
         	}
             ```
+            
            ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/Body.png)
             
     2. To send **Get** request with **path variables** use the following url(you can make your own trip plan by changing the path variables): http://localhost:8080/tour/Bulgaria/100/1200/EUR
@@ -45,7 +48,8 @@ The API calculates the budget for each country in its respected currencies. If t
     ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/%20RequestParameters.png)
 
 ## Diagram of the Application
-    ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/CountryNeighboursTourDiagram.jpg)
+    
+   ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/CountryNeighboursTourDiagram.jpg)
 
 ## How to run the application with Kubernetes:
 1. Download helm chart from [here](https://drive.google.com/open?id=1IMQK8NE31m8V948mw6-fkjHBPhPdv-7S)
