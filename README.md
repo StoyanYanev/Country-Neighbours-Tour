@@ -23,9 +23,6 @@ The API calculates the budget for each country in its respected currencies. If t
     
 - After Docker image is running open Postman <img src="https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/postman.png" width="50" height="50"> 
 
-
-![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/postman.png){:height="50px" width="50px"}
-
 - With Postman you can send two types of request **POST** and **GET**:
     1. To send **Post** request copy API url http://localhost:8080/tour and paste it in the Postman endpoint bar.
         
