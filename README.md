@@ -33,14 +33,15 @@ The API calculates the budget for each country in its respected currencies. If t
         
         After that you must add **request body**: click on Body tab then click on raw and select format type JSON. This endpoint expects a Json body which contains the details for new trip plan. Below is a sample Json body.
            
-           ```
+           
+           
             {	
         		"startCountry": "Bulgaria",
         		"budgetPerCountry": "100",
         		"totalBudget": "1200",
         		"currencyCode": "EUR"
         	}
-            ```
+           
             
           ![alt text](https://github.com/StoyanYanev/Country-Neighbours-Tour/blob/master/imgs/Body.png)
             
