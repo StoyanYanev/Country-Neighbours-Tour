@@ -12,7 +12,7 @@ public class CurrencyService {
     private static final String REQUEST_URL = "https://api.exchangeratesapi.io/latest?base=";
 
     private RestTemplate restTemplate;
-    private final static Logger LOGGER = LoggerFactory.getLogger(Currency.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(CurrencyService.class);
 
     public CurrencyService() {
         restTemplate = new RestTemplate();
